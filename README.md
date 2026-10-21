@@ -1,20 +1,23 @@
-# Portafolio de Benjamín Aedo
+# Mi portafolio
 
-Sitio estático de presentación profesional y académica para **Benjamín Aedo**, estudiante de primer año, segundo semestre, de **Ingeniería Civil en Informática** en la **Universidad Católica de Temuco (UCT)**. Preparado para ICINF1107, Sección 3.
+Este es mi portafolio personal, donde presento quién soy, lo que estoy aprendiendo y algunos de los trabajos que he realizado durante la carrera de Ingeniería Civil en Informática en la Universidad Católica de Temuco.
 
-## Objetivo y audiencia
+## Sobre el sitio
 
-El sitio presenta el perfil, las competencias y los proyectos del semestre a docentes, reclutadores técnicos, compañeros y posibles colaboradores. La información se organiza para que cada visitante pueda conocer rápidamente la formación de Benjamín, explorar sus trabajos y encontrar el formulario de contacto.
+Estoy en primer año, segundo semestre, y me interesa el desarrollo web y backend, Linux y la arquitectura de software. En este sitio comparto un poco de ese recorrido y de las cosas que me gustaría seguir aprendiendo.
 
-## Contenido
+El portafolio incluye:
 
-- **Presentación:** fotografía, carrera, intereses y objetivo profesional.
-- **Sobre mí:** intereses en desarrollo web y backend, Linux y arquitectura de software, además de los valores que Benjamín relaciona con su práctica del fútbol.
-- **Competencias:** Python, FastAPI, HTML5/CSS3, Linux Mint, Git y modelado UML.
-- **Proyectos:** API RESTful CRUD en FastAPI, modelado UML con draw.io y entorno de desarrollo en Linux Mint.
-- **Contacto:** formulario con nombre, correo y mensaje.
+- Una presentación y una sección sobre mis intereses.
+- Algunas de las herramientas y tecnologías que estoy aprendiendo: Python, FastAPI, HTML, CSS, Linux Mint, Git y UML.
+- Tres trabajos relacionados con una API CRUD en FastAPI, el modelado de sistemas con UML y la configuración de un entorno de desarrollo en Linux Mint.
+- Un formulario de contacto.
 
-## Estructura del proyecto
+## Cómo está hecho
+
+El sitio está construido con HTML, CSS y JavaScript, sin frameworks ni dependencias que haya que instalar. Se adapta a pantallas de celular, tablet y escritorio, y usa etiquetas semánticas, texto alternativo para las imágenes y foco visible para navegar con el teclado.
+
+La estructura de los archivos principales es:
 
 ```text
 .
@@ -24,32 +27,17 @@ El sitio presenta el perfil, las competencias y los proyectos del semestre a doc
 ├── js/
 │   └── contact.js
 ├── img/
-│   └── imagen.jpeg
+│   ├── imagen.jpeg
+│   ├── fastapi.png
+│   ├── linux.jpeg
+│   └── modeladouml.png
 └── README.md
 ```
 
-La fotografía usa texto alternativo y se carga desde `img/imagen.jpeg`. Conserva ese nombre y ruta al reemplazarla.
+## Ver el portafolio
 
-## Diseño y adaptación
+Puedo abrir `index.html` directamente en un navegador. No hace falta instalar nada ni compilar el proyecto. Para que se vean las imágenes, mantengo los archivos de `img/` en esa carpeta.
 
-La página utiliza navegación superior, una presentación en dos columnas, tarjetas de proyectos y un formulario dentro de una tarjeta. Los fondos del encabezado, las secciones y el pie recorren el ancho de la pantalla; el contenido se mantiene alineado en un eje central de hasta 1200 px. La paleta combina azul petróleo, tonos marfil y arena, con acentos cálidos que acompañan la fotografía.
+## Sobre el formulario
 
-La hoja de estilos define tres rangos: móvil hasta 768 px, tablet entre 769 y 1024 px y escritorio desde 1025 px. En móviles el perfil y los proyectos se apilan; en tablet las tarjetas usan dos columnas; en escritorio los proyectos se distribuyen en tres. Las imágenes y controles se mantienen dentro de sus contenedores.
-
-## Accesibilidad y compatibilidad
-
-- HTML en español con regiones semánticas y encabezados jerárquicos.
-- Enlace para saltar al contenido y foco de teclado visible.
-- Texto alternativo descriptivo para la fotografía.
-- Etiquetas asociadas a los campos del formulario, validación básica y áreas táctiles cómodas.
-- Contrastes seleccionados para lectura clara y respeto de la preferencia de movimiento reducido.
-- CSS local y fuentes del sistema; no se necesitan frameworks ni recursos remotos.
-
-## Abrir localmente
-
-1. Descarga o clona la carpeta del proyecto.
-2. Comprueba que `img/imagen.jpeg` esté en la carpeta `img`.
-3. Abre `index.html` en un navegador moderno.
-4. Cambia el ancho de la ventana para revisar las vistas móvil, tablet y escritorio.
-
-No requiere instalación ni compilación. El formulario valida los campos y muestra una confirmación accesible al enviarlo. Esa confirmación es de interfaz: para transmitir y recibir mensajes hay que conectar el formulario a un servicio o backend. No se añadieron direcciones de contacto porque no se proporcionaron enlaces reales.
+El formulario comprueba que los campos estén completos y muestra una confirmación en la página. Por ahora es solo una interacción visual: para recibir mensajes de verdad tendría que conectarlo a un servicio o a un backend.
