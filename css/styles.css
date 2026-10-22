@@ -80,7 +80,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border-radius: .45rem;
   background: var(--light-green);
   object-fit: cover;
-  object-position: center 42%;
+  object-position: center 75%;
 }
 .profile-portrait figcaption { margin-top: .5rem; color: var(--muted); font-size: .85rem; }
 .eyebrow { color: var(--green); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
@@ -143,7 +143,8 @@ h3 { font-size: 1.3rem; }
 }
 .contact-form textarea { resize: vertical; }
 .contact-form .button { justify-self: start; margin-top: .75rem; }
-.form-success { color: var(--green); font-weight: 700; }
+.form-success { margin: .5rem 0 0; padding: .75rem 1rem; border-left: 4px solid var(--green); border-radius: .25rem; background: var(--light-green); color: var(--ink); font-weight: 700; }
+.form-success[hidden] { display: none; }
 .site-footer { min-height: 5rem; max-width: none; margin: 0; padding: 1.25rem max(1.5rem, calc((100% - var(--content)) / 2)); border-top: 1px solid var(--line); background: var(--ink); color: var(--white); font-size: .9rem; }
 .site-footer p { margin: 0; }
 .site-footer a { color: var(--white); }

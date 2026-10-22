@@ -13,7 +13,7 @@ La página está dividida en varias secciones:
 
 ## Cómo está organizado el código
 
-Separé el contenido, los estilos y la interacción en archivos distintos para poder encontrar y modificar cada parte con más facilidad:
+Separé el contenido y los estilos en archivos distintos para poder encontrar y modificar cada parte con más facilidad:
 
 ```text
 .
@@ -21,7 +21,7 @@ Separé el contenido, los estilos y la interacción en archivos distintos para p
 ├── css/
 │   └── styles.css      # Colores, tamaños, distribución y adaptación a pantallas
 ├── js/
-│   └── contact.js      # Comportamiento del formulario
+│   └── contact.js      # Mensaje de confirmación del formulario
 ├── img/                # Fotografías e imágenes de los proyectos
 │   ├── imagen.jpeg
 │   ├── fastapi.png
@@ -42,11 +42,11 @@ En `css/styles.css` definí la apariencia: la paleta de colores, los tamaños de
 
 La distribución cambia según el ancho de la pantalla. En un celular el contenido se apila en una columna; en una tablet las tarjetas de proyectos se ordenan en dos columnas; y en una pantalla grande se muestran en tres. Las imágenes de los proyectos tienen un tamaño uniforme para que las tarjetas queden ordenadas. El diagrama UML se muestra completo para que no se corte.
 
-### JavaScript
+### JavaScript y formulario de contacto
 
-En `js/contact.js` seleccioné el formulario y el mensaje de confirmación. Cuando se envía el formulario, JavaScript evita que la página se recargue, muestra el mensaje, limpia los campos y lleva el foco hasta la confirmación. El navegador también comprueba que los campos obligatorios estén completos y que el correo tenga un formato válido.
+En `js/contact.js` seleccioné el formulario y el mensaje de confirmación. Cuando se envía, JavaScript evita que la página se recargue, muestra el aviso, limpia los campos y lleva el foco hasta la confirmación. Antes de eso, el navegador comprueba que los campos obligatorios estén completos y que el correo tenga un formato válido.
 
-Por ahora el formulario solo muestra una confirmación en la página: no envía los datos ni guarda los mensajes. Para recibirlos tendría que conectarlo a un servicio o crear un backend.
+El aviso confirma la interacción en la página, pero el formulario todavía no envía ni guarda los mensajes. Para recibirlos tendría que conectarlo a un servicio o crear un backend.
 
 ## Imágenes
 
@@ -58,7 +58,7 @@ No necesito instalar programas, dependencias ni compilar el proyecto. Abro el ar
 
 ## Tecnologías que usé
 
-- **HTML** para organizar el contenido.
+- **HTML** para organizar el contenido y el formulario.
 - **CSS** para los estilos y la adaptación a distintos tamaños de pantalla.
-- **JavaScript** para la interacción del formulario.
+- **JavaScript** para mostrar la confirmación al enviar el formulario.
 - **Imágenes locales** para la fotografía y los proyectos.
